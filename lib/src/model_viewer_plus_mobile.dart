@@ -33,14 +33,14 @@ class ModelViewerState extends State<ModelViewer> {
     _initProxy();
   }
 
-  @override
-  void dispose() {
-    super.dispose();
-    if (_proxy != null) {
-      _proxy!.close(force: true);
-      _proxy = null;
-    }
-  }
+  // @override
+  // void dispose() {
+  //   super.dispose();
+  //   if (_proxy != null) {
+  //     _proxy!.close(force: true);
+  //     _proxy = null;
+  //   }
+  // }
 
   @override
   void didUpdateWidget(final ModelViewer oldWidget) {
